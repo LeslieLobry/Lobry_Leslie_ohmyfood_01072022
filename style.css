@@ -102,17 +102,12 @@
   font-weight: bold;
   font-size: 20px;
 }
-.fonctionnement :hover
+.fonctionnement-list :hover
 {
   background-color: #FF79DA;
   
-  
+ 
 }
-.fonctionnement-list-item li :hover
-{
-color: #9356dc;
-}
-
 .fonctionnement-list {
   display: flex;
   flex-direction: column;
@@ -151,27 +146,71 @@ color: #9356dc;
   position: absolute;
   left: -0.75rem;
 }
-}
-.restaurants {
+.restaurants
+{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  margin: 30px;
-  gap: 25px;
+  background-color: #F2F2F2;
+  padding: 15px;
+  
 }
-
-.restaurants-link {
+.restaurants-cellule
+{
+  display: flex;
+  gap: 25px;
+  flex-basis: 100%;
+}
+.restaurants-item
+{
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  border: 2px transparent solid;
+  border-radius: 25px;
+  overflow: hidden;
+  
+
+}
+.restaurants-item a
+{
+  text-decoration: none;
+  color: black;
 }
 
-.restaurants-item-picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.restaurants-img img
+{
+  height: 250px;
+  width: 350px;
+  
+}
+.restaurants-new
+{
+  background-color: #99e2d0;
+    color: #1b6150;
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    
+}
+.restaurants-img
+{
+  position: relative;
+}
+.restaurants-heart
+{
+ 
 }
 
-.restaurants-item {
-  gap: 25px;
+@media screen and (max-width: 768px)
+{
+  .restaurants
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurants-cellule
+  {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: center;
+  }
 }
