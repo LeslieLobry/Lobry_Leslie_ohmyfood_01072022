@@ -331,6 +331,10 @@
   flex-direction: column;
   padding: 25px;
   background-color: rgb(236, 234, 234);
+  gap: 25px;
+  border-top: 2px transparent solid;
+  border-radius: 20px;
+    
 }
 .menu-haut
 {
@@ -344,11 +348,43 @@
   flex-basis: 100%;
   font-family: 'Shrikhand', cursive;
 }
-.underline-h3 {
-  width: 40px;
-  height: 0.25em;
-  background-color: #99e2d0;
-  margin: 0;
-  padding: 0;
-  margin-left: 5vw;
+.menu-éléments
+{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  
+}
+.composants
+{
+  display: flex;
+  flex-direction: row;
+  border: 2px transparent solid;
+  border-radius: 25px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 2px 2px 2px lightgrey;
+}
+.composants-item
+{ 
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+.btn-commander
+{
+  display: flex;
+  justify-content: center;
+  
+  }
+.btn-commander button
+{
+  
+  border-radius: 25px;
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
+  padding:15px;
+  border: 0.1px transparent solid;
+  width: 150px;
+  color: white;
+  
 }
