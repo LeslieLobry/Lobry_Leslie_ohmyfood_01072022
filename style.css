@@ -302,3 +302,53 @@
   font-family: 'Shrikhand', cursive;
   
 }
+
+/*deuxième page*/
+.header
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.header-back
+{
+  font-size: larger;
+  font-weight: bolder;
+  color: black;
+}
+.restoimg
+{
+  max-width: 100%;
+    max-height: 32rem;
+    width: 100%;
+    object-fit: cover;
+}
+.menu
+{
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: rgb(236, 234, 234);
+}
+.menu-haut
+{
+  display: flex;
+  flex-direction: row;
+  
+}
+.menu-haut-titre
+{
+  display: flex;
+  flex-basis: 100%;
+  font-family: 'Shrikhand', cursive;
+}
+.underline-h3 {
+  width: 40px;
+  height: 0.25em;
+  background-color: #99e2d0;
+  margin: 0;
+  padding: 0;
+  margin-left: 5vw;
+}
