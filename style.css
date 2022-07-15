@@ -43,7 +43,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  
+
   gap: 20px;
 
 }
@@ -64,17 +64,19 @@
 
 .btn {
   border-radius: 50px;
-  background: linear-gradient(180deg,#FF79DA,#9356DC);
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
   padding: 5px;
   font-size: 25px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
   padding: 20px;
+  transition: 1s;
+
 }
 
 .btn-link {
   text-decoration: none;
   color: white;
-  
+
 }
 
 @media screen and (max-width: 768px) {
@@ -102,12 +104,13 @@
   font-weight: bold;
   font-size: 20px;
 }
-.fonctionnement-list :hover
-{
-  background-color: #FF79DA;
-  
- 
+
+.fonctionnement-link i:hover {
+  color: var(--primaire);
+
+
 }
+
 .fonctionnement-list {
   display: flex;
   flex-direction: column;
@@ -117,7 +120,7 @@
 }
 
 .fonctionnement-link {
-  
+
   padding: 1.5rem;
   margin: 1rem 0 1rem 0.75rem;
   box-shadow: .25rem .25rem .5remrgba(0, 0, 0, .125);
@@ -128,13 +131,13 @@
   color: black;
   text-decoration: none;
 }
-.fonctionnement-list-item
-{
+
+.fonctionnement-list-item {
   display: flex;
   gap: 20px;
 }
-.fonctionnement-list-number
-{
+
+.fonctionnement-list-number {
   background: #9356dc;
   height: 1.5rem;
   width: 1.5rem;
@@ -146,71 +149,156 @@
   position: absolute;
   left: -0.75rem;
 }
-.restaurants
-{
+
+.restaurants {
   display: flex;
   flex-direction: column;
   background-color: #F2F2F2;
   padding: 15px;
-  
+  gap: 20px;
+
+
 }
-.restaurants-cellule
-{
+
+.restaurants-cellule {
   display: flex;
   gap: 25px;
   flex-basis: 100%;
-}
-.restaurants-item
-{
-  display: flex;
-  flex-direction: column;
-  border: 2px transparent solid;
-  border-radius: 25px;
-  overflow: hidden;
   
 
 }
-.restaurants-item a
-{
+
+
+.restaurants-item a {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 2px transparent solid;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px lightgrey;
+  flex-wrap: wrap;
+}
+
+.restaurants-img-new {
+  position: relative;
+}
+
+.restaurants-new {
+  display: flex;
+  border: 2px transparent solid;
+  border-radius: 5px;
+  background-color: var(--tertiaire);
+  width: 80px;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.restaurants-item a {
   text-decoration: none;
   color: black;
 }
 
-.restaurants-img img
-{
+.restaurants-img img {
   height: 250px;
-  width: 350px;
-  
-}
-.restaurants-new
-{
-  background-color: #99e2d0;
-    color: #1b6150;
-    padding: 0.5rem;
-    border-radius: 0.125rem;
-    
-}
-.restaurants-img
-{
-  position: relative;
-}
-.restaurants-heart
-{
- 
+ width: 350px;
 }
 
-@media screen and (max-width: 768px)
+.restaurants-item-down {
+  display: flex;
+  padding: 20px;
+}
+
+.restaurants-item-text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.restaurants-heart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.restaurants-heart .restaurants-heart-full {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  transition: 250ms;
+}
+
+.restaurants-heart .restaurants-heart-full:hover {
+  opacity: 1;
+  color: var(--primaire);
+}
+@media screen and (max-width: 1024px)
 {
-  .restaurants
+  .restaurants-img image-rendering
   {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
   }
   .restaurants-cellule
   {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .restaurants-cellule {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     justify-content: center;
   }
+
+  .restaurants-item {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .restaurants-img img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.footer
+{
+  display: flex;
+  background-color:rgb(71, 70, 70);
+  color: white;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 25px;
+}
+.footer-list
+{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-listelt 
+{
+  display: flex;
+  gap: 5px;
+}
+.footer-logo
+{
+  font-family: 'Shrikhand', cursive;
+  
 }
