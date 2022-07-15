@@ -334,13 +334,14 @@
   gap: 25px;
   border-top: 2px transparent solid;
   border-radius: 20px;
-    
+ 
 }
+
 .menu-haut
 {
   display: flex;
   flex-direction: row;
-  
+
 }
 .menu-haut-titre
 {
