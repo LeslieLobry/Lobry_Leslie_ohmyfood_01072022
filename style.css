@@ -77,30 +77,23 @@ body
   text-align: center;
   background-color: #f3f3f3;
   gap: 20px;
-  padding: 20px;
+  padding:40px;
 }
 
 .container-title {
-  display: flex;
-  font-weight: bolder;
-  flex-basis: 100%;
-  font-size: 30px;
-  flex-wrap: wrap;
   
+  font-size: 20px;
+   
 }
 
-.container-content {
-  font-size: 25px;
 
-}
 
 .btn {
   border-radius: 50px;
   background: linear-gradient(180deg, #FF79DA, #9356DC);
-  padding: 5px;
-  font-size: 25px;
+  font-size: 16px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
-  padding: 20px;
+  padding: 15px 20px;
   transform: scale(1);
 
 }
@@ -129,7 +122,7 @@ body
   .container {
     display: flex;
     align-items: center;
-    margin: 15px;
+    
 
 
   }
@@ -176,6 +169,7 @@ body
   position: relative;
   color: black;
   text-decoration: none;
+  justify-content: center;
 }
 
 .fonctionnement-list-item {
@@ -207,7 +201,7 @@ body
 }
 .restaurants-title
 {
-  margin: 25px;
+  padding:25px;
 }
 
 .restaurants-cellule {
@@ -215,7 +209,7 @@ body
   gap: 20px;
   flex-basis: 100%;
   flex-wrap: wrap;
-align-items: center;
+
 justify-content: center;
 }
 
@@ -337,6 +331,10 @@ justify-content: center;
     object-fit: cover;
     align-items: flex-start;
     justify-content: flex-start;
+  }
+  .restaurants-title
+  {
+    padding: 0;
   }
 }
 .containers
