@@ -1,11 +1,10 @@
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <title>A la française</title>
+    <title>La palette du goût</title>
     <meta charset="utf-8" />
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-
     <link rel="stylesheet" href="style.css">
-
-    </link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
 </head>
+<body>
 <header>
     <div class="header">
         <a href="Accueil.html" class="header-back">
@@ -31,10 +31,11 @@
     </div>
 </header>
 
-<body>
-    <img src="C:\Users\emili\OneDrive\Bureau\cours\P3_Lobry_Leslie_ohmyfood_01072022\images\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+<div class="imgfond">
+    <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
         alt class="restoimg">
-
+        <div class="imgfondborder"></div>
+    </div>
     <div class="menu">
         <div class="menu-haut">
             <div class="menu-haut-titre">
@@ -49,7 +50,9 @@
                 </div>
             </div>
         </div>
+        <div class="éléments">
         <section class="menu-éléments">
+            <div class="entrée">
             <div class="menu-éléments-titre">
                 <h3>ENTRÉES</h3>
                 <div class="underline">
@@ -109,8 +112,10 @@
                     </div>
                 </div>
             </article>
+            </div>
         </section>
         <section class="menu-éléments">
+            <div class="plats">
             <div class="menu-éléments-titre">
                 <h3>Plats</h3>
                 <div class="underline"></div>
@@ -169,8 +174,10 @@
                     </div>
                 </div>
             </article>
+            </div>
         </section>
         <section class="menu-éléments">
+            <div class="desserts">
             <div class="menu-éléments-titre">
                 <h3>DESSERTS</h3>
                 <div class="underline"></div>
@@ -229,15 +236,17 @@
                     </div>
                 </div>
             </article>
+            </div>
         </section>
+        </div>
         <div class="btn-commander">
             <button>Commander</button>
         </div>
     </div>
-</body>
+
 <footer>
-    <div class="footer">
-        <div class="container">
+    <div class="footers">
+        <div class="containers">
             <span class="footer-logo">
                 Ohmyfood
             </span>
@@ -264,6 +273,9 @@
                 </span>
 
             </div>
-
+        </div>
+    </div>
 
 </footer>
+</body>
+</html>
