@@ -80,7 +80,7 @@ body
 }
 .search {
   display: flex;
-  background-color: #dedada;
+  background-color:#EDEDED;
   justify-content: center;
   align-items: center;
   padding: 10px;
@@ -92,7 +92,7 @@ body
 
 .searchFormSearchinput {
   border: 0px transparent;
-  background-color: #dedada;
+  background-color: #EDEDED;
   font-weight: bold;
 }
 
@@ -121,6 +121,9 @@ body
   box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
   padding: 15px 20px;
   transform: scale(1);
+  cursor: pointer;
+  transition-property: all ;
+  transition-duration: 1s;
 
 }
 
@@ -161,41 +164,52 @@ body
   gap: 25px;
   font-weight: bold;
   font-size: 20px;
-}
+  
+  }
 
 .fonctionnement-link:hover i 
 {
   color: var(--primaire);
-  
   opacity: 0.8;
   
 }
   
 .fonctionnement-list {
   display: flex;
-  flex-direction: column;
-  gap: 25px;
+  flex-direction:row;
+  gap: 35px;
   list-style: none;
   text-decoration: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transform: scale(1);
+  
+  
+  
+  
+ 
 }
 .fonctionnement-link:hover
 {
   box-shadow: 2px 2px 1px grey;
-  background-color: #eae5e5;
+  background-color: #EDEDED;
+  transform: scale(1.05);
 }
 
 .fonctionnement-link
  {
   display: flex;
-  padding: 1.5rem;
+  padding: 25px;
   margin: 1rem 0 1rem 0.75rem;
   box-shadow: .25rem .25rem .5rem rgba(0, 0, 0, .125);
   border-radius: 1.25rem;
   background-color: #f6f6f6;
   color: black;
   text-decoration: none;
-  justify-content: center;
   position: relative;
+  flex-basis: 25%;
+  transition-property: all ;
+  transition-duration: 0.5s;
  }
 
 .fonctionnement-list-item 
@@ -215,6 +229,13 @@ body
   color: #fff;
   position: absolute;
   left: -0.75rem;
+}
+@media screen and (max-width: 1124px)
+{
+  .fonctionnement-link
+  {
+    flex-basis: 100%;
+  }
 }
 
 .restaurants {
@@ -245,7 +266,7 @@ justify-content: center;
   display: flex;
   flex-direction: column;
   background-color: white;
-  border: 2px transparent solid;
+  
   border-radius: 25px;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
@@ -253,6 +274,8 @@ justify-content: center;
   color: black;
   transform: scale(1);
   flex-basis: 100%;
+  transition-property: all ;
+  transition-duration: 1s;
 }
 .restaurants-item:hover a
 {
@@ -269,6 +292,7 @@ justify-content: center;
   display: flex;
   border: 2px transparent solid;
   border-radius: 5px;
+  color: #217460;
   background-color: var(--tertiaire);
   width: 80px;
   justify-content: center;
@@ -300,6 +324,7 @@ justify-content: center;
   justify-content: center;
   align-items: center;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .restaurants-heart .restaurants-heart-full {
@@ -390,6 +415,12 @@ justify-content: center;
   gap: 10px;
   
 }
+.footer-logo
+{
+  width: 10px;
+  padding:0;
+  margin-right: 10px;
+}
 
 .footer-listelt {
   display: flex;
@@ -405,15 +436,24 @@ justify-content: center;
 .header {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   gap: 30px;
 }
 
 .header-back {
+  display: flex;
+  text-decoration: none;
   font-size: larger;
   font-weight: bolder;
   color: black;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 25px;
+  flex-basis: 40%;
+}
+.header-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .restoimg {
@@ -497,13 +537,14 @@ justify-content: center;
 .composants {
   display: flex;
   flex-direction: row;
-  border: 2px transparent solid;
+  
   border-radius: 25px;
   background-color: white;
   box-shadow: 2px 2px 2px lightgrey;
   align-items: center;
   overflow: hidden;
   width: 450px;
+  cursor: pointer;
   
  }
 .entrée
@@ -575,7 +616,7 @@ justify-content: center;
 }
 
 .composants-prix {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .composants-check {
@@ -631,6 +672,9 @@ justify-content: center;
   font-weight: bold;
   font-size: 16px;
   transform: scale(1);
+  cursor: pointer;
+  transition-property: all ;
+  transition-duration: 1s;
 
 }
 
