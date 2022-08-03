@@ -164,13 +164,14 @@ body
   gap: 25px;
   font-weight: bold;
   font-size: 20px;
+  padding: 20px;
   
   }
 
-.fonctionnement-link:hover i 
+.fonctionnement-link:hover  
 {
-  color: var(--primaire);
-  opacity: 0.8;
+  background-color: #F5EDFF;
+  opacity: 1;
   
 }
   
@@ -242,31 +243,36 @@ body
   display: flex;
   flex-direction: column;
   background-color: #F2F2F2;
-  padding: 25px;
   gap: 20px;
   flex-wrap: wrap;
-  
-}
-.restaurants-title
-{
-  padding:25px;
-}
+ 
+  }
+
 
 .restaurants-cellule {
   display: flex;
   gap: 20px;
-  flex-basis: 100%;
   flex-wrap: wrap;
-
-justify-content: center;
+ 
+  }
+.restaurants-item
+{
+  width: 100%;
+  flex-basis: 45%;
+  
 }
-
+.restaurants-éléments
+{
+  padding: 35px 0px 35px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
 
 .restaurants-item a {
   display: flex;
   flex-direction: column;
   background-color: white;
-  
   border-radius: 25px;
   overflow: hidden;
   box-shadow: 2px 2px 2px lightgrey;
@@ -276,6 +282,7 @@ justify-content: center;
   flex-basis: 100%;
   transition-property: all ;
   transition-duration: 1s;
+  width: 100%;
 }
 .restaurants-item:hover a
 {
@@ -302,8 +309,10 @@ justify-content: center;
 }
 
 .restaurants-img img {
-  height: 350px;
-  width: 700px;
+  height: 190px;
+  width: 100%;
+  object-fit: cover;
+ 
 }
 
 .restaurants-item-down {
@@ -350,8 +359,7 @@ justify-content: center;
   .restaurants-cellule {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    
   }
 
 }
@@ -361,6 +369,8 @@ justify-content: center;
   .restaurants {
     display: flex;
     flex-direction: column;
+    padding-right: 25px;
+    
   }
 
   .restaurants-cellule {
@@ -378,8 +388,7 @@ justify-content: center;
   }
 
   .restaurants-img img {
-    width: 430px;
-    height: 200px;
+    width: 100%;
     object-fit: cover;
     align-items: flex-start;
     justify-content: flex-start;
@@ -404,8 +413,10 @@ justify-content: center;
   flex-direction: column;
   align-items: flex-start;
   padding: 25px;
- 
-
+}
+.footer-logo
+{
+  font-family:'Shrikhand', cursive;
 }
 
 
@@ -415,28 +426,32 @@ justify-content: center;
   gap: 10px;
   
 }
-.footer-logo
+.footer-logo1
 {
-  width: 10px;
+  font-size: 15px;
   padding:0;
-  margin-right: 10px;
+  margin-right: 12px;
+}
+.footer-logo2
+{ 
+  font-size: 12px;
+  padding:0;
+  margin-right: 9px;
+  align-items: center;
 }
 
 .footer-listelt {
   display: flex;
- 
 }
 
-.footer-logo {
-  font-family: 'Shrikhand', cursive;
-  
-}
+
 
 /*deuxième page*/
 .header {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  flex-basis: 100%;
 }
 
 .header-back {
@@ -448,12 +463,19 @@ justify-content: center;
   justify-content: flex-start;
   align-items: center;
   padding: 25px;
-  flex-basis: 40%;
+  flex-basis: 33%;
 }
 .header-title{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-basis: 33%;
+  font-family:'Shrikhand', cursive;
+}
+.rien
+{
+  display: flex;
+  flex-basis: 33%;
 }
 
 .restoimg {
@@ -494,9 +516,8 @@ justify-content: center;
   flex-direction: row;
   gap: 25px;
   flex-wrap: wrap;
-  
   justify-content: center;
-  
+
 }
 
 .menu-haut {
@@ -612,7 +633,21 @@ justify-content: center;
   flex-direction: column;
   flex-basis: 100%;
   padding: 15px;
-
+  text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.composants-titre
+{
+  white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.composants-text
+{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .composants-prix {
@@ -623,8 +658,8 @@ justify-content: center;
   display: grid;
   place-items: center;
   background-color: #99E2D0;
-  margin-right: -100px;
-  width: 100px;
+  margin-right: -130px;
+  width: 130px;
   height: 75px;
   border-radius: 0 1rem 1rem 0;
   transition: margin-right 1s;
@@ -642,15 +677,13 @@ justify-content: center;
   color: #f3f3f3;
   transition: 1.5s;
   transform: rotate(250deg);
+  font-size:xx-large;
 }
 
 
 .composants:hover .composants-check-icon i {
   transform: rotate(0deg)
 }
-
-
-
 
 
 
